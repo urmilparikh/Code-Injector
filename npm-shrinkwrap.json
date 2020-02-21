@@ -1275,11 +1275,27 @@
         "which": "~1.3.0"
       }
     },
+    "grunt-retro": {
+      "version": "0.6.4",
+      "resolved": "https://registry.npmjs.org/grunt-retro/-/grunt-retro-0.6.4.tgz",
+      "integrity": "sha1-8mqEj2pHl6X/foUOYCIMDea+jnI=",
+      "dev": true
+    },
     "grunt-sass": {
       "version": "3.1.0",
       "resolved": "https://registry.npmjs.org/grunt-sass/-/grunt-sass-3.1.0.tgz",
       "integrity": "sha512-90s27H7FoCDcA8C8+R0GwC+ntYD3lG6S/jqcavWm3bn9RiJTmSfOvfbFa1PXx4NbBWuiGQMLfQTj/JvvqT5w6A==",
       "dev": true
+    },
+    "grunt-zip": {
+      "version": "0.18.2",
+      "resolved": "https://registry.npmjs.org/grunt-zip/-/grunt-zip-0.18.2.tgz",
+      "integrity": "sha512-9o0Fmft+7C9jBqqqQRAbon1Qaz4HHqHpNrDmrWVQy9nxC9/q8budlx+J6y9ZaCs3ioAKIJl7lfXWqoOJCMnXcQ==",
+      "dev": true,
+      "requires": {
+        "grunt-retro": "~0.6.0",
+        "jszip": "~2.5.0"
+      }
     },
     "har-schema": {
       "version": "2.0.0",
@@ -1702,6 +1718,15 @@
         "extsprintf": "1.3.0",
         "json-schema": "0.2.3",
         "verror": "1.10.0"
+      }
+    },
+    "jszip": {
+      "version": "2.5.0",
+      "resolved": "https://registry.npmjs.org/jszip/-/jszip-2.5.0.tgz",
+      "integrity": "sha1-dET9hVHd8+XacZj+oMkbyDCMwnQ=",
+      "dev": true,
+      "requires": {
+        "pako": "~0.2.5"
       }
     },
     "kind-of": {
@@ -2208,6 +2233,12 @@
         "os-homedir": "^1.0.0",
         "os-tmpdir": "^1.0.0"
       }
+    },
+    "pako": {
+      "version": "0.2.9",
+      "resolved": "https://registry.npmjs.org/pako/-/pako-0.2.9.tgz",
+      "integrity": "sha1-8/dSL073gjSNqBYbrZ7P1Rv4OnU=",
+      "dev": true
     },
     "parse-filepath": {
       "version": "1.0.2",
@@ -3228,8 +3259,7 @@
     "webextension-polyfill": {
       "version": "0.6.0",
       "resolved": "https://registry.npmjs.org/webextension-polyfill/-/webextension-polyfill-0.6.0.tgz",
-      "integrity": "sha512-PlYwiX8e4bNZrEeBFxbFFsLtm0SMPxJliLTGdNCA0Bq2XkWrAn2ejUd+89vZm+8BnfFB1BclJyCz3iKsm2atNg==",
-      "dev": true
+      "integrity": "sha512-PlYwiX8e4bNZrEeBFxbFFsLtm0SMPxJliLTGdNCA0Bq2XkWrAn2ejUd+89vZm+8BnfFB1BclJyCz3iKsm2atNg=="
     },
     "websocket-driver": {
       "version": "0.7.3",

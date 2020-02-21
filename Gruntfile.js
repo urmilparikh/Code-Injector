@@ -93,6 +93,14 @@ module.exports = function(grunt) {
             },
         },
 
+        zip: {
+            'using-cwd': {
+                cwd: 'dist/',
+                src: ['dist/*'],
+                dest: 'code-injector-dist.zip'
+            }
+        },
+
         clean: {
         	options: {
                 force: true
@@ -105,12 +113,13 @@ module.exports = function(grunt) {
     // Load the npm modules
     grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-import');
+    grunt.loadNpmTasks('grunt-zip');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-clean');
 
     // Tasks
-    grunt.registerTask('build', ['clean:dist', 'import', 'copy', 'sass:dist', 'clean:sass']);
+    grunt.registerTask('build', ['clean:dist', 'import', 'copy', 'sass:dist', 'clean:sass', 'zip']);
     grunt.registerTask('dev', ['build','watch']);
 
     // Task default
