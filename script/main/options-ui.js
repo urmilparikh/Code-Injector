@@ -1,4 +1,4 @@
-// @import "../utils/utils.js";
+@import "../utils/utils.js";
 
 var el;
 
