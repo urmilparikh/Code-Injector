@@ -138,7 +138,10 @@ function handleWebNavigationOnCommitted(_info) {
     .then(splitRulesByInjectionType)
 
     // inject the result
-    .then(injectRules);
+    .then(injectRules)
+
+    // handle error
+    .catch(function(_err) { console.error(_err.message); });
 }
 
 /**  

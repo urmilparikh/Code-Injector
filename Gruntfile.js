@@ -12,20 +12,20 @@ module.exports = function(grunt) {
                 tasks: ['copy:html'],
             },
             script: {
-                files: ['src/script/*'],
+                files: ['script/**'],
                 tasks: ['import:script'],
             },
             style: {
-                files: ['src/style/fonts/**',
-                        'src/style/images/**'],
+                files: ['style/fonts/**',
+                        'style/images/**'],
                 tasks: ['copy:style'],
             },
             sass: {
-                files: ['src/style/*'],
+                files: ['style/*'],
                 tasks: ['copy:sass', 'sass:dist', 'clean:sass'],
             },
             manifest: {
-                files: ['src/manifest.json'],
+                files: ['manifest.json'],
                 tasks: ['copy:manifest'],
             }
         },
